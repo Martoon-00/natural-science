@@ -24,6 +24,9 @@ class Complex {
 		var num = mul(c.adjoined())
 		return new Complex(num.re / frac, num.im / frac)	
 	}
+	function dist(c: Complex): Number{
+		return Math.sqrt(Math.pow((c.re - re), 2) + Math.pow((c.im - im), 2))
+	}
 	
 	function toString(): String{
 		return "(" + re + ", " + im + ")"
