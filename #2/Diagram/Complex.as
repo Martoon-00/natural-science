@@ -1,10 +1,9 @@
-﻿// Filename Plant.as 
-class Complex { 
+﻿class Complex { 
 	var re:Number, im:Number
 	
 	function Complex(re:Number, im:Number){
-		this.re = re
-		this.im = arguments.length < 2 ? 0 : im
+		this.re = re == undefined ? 0 : re
+		this.im = im == undefined ? 0 : im
 	}
 	
 	function adjoined(): Complex{
