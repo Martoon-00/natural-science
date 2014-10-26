@@ -1,1 +1,0 @@
-Virtual Machine Argument : -Djava.library.path=lib/lwjgl-2.9.1/native/windows
